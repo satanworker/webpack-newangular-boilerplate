@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{item.preview.img}}">
+                <span class="card-title">{{item.name}}</span>
+            </div>
+            <div class="card-content">
+                <p>{{item.preview.description}}</p>
+            </div>
+            <div class="card-action">
+                <a (click)="clickPortfolioItem($event)">More</a>
+            </div>
+        </div>
+    </div>
+</div>

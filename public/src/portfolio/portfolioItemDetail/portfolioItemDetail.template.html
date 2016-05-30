@@ -1,0 +1,7 @@
+<h1>{{item?.name}}</h1>
+<p>{{item?.detail.description}}</p>
+<div class="showcase" *ngFor="let showcase of item.detail.showcases" style="border: 1px solid; margin: 20px; width: 700px; padding: 20px;">
+    <img src="{{showcase.img}}"/>
+    <p class="description">{{showcase.description}}</p>
+</div>
+<a class="go_back" (click)="goBack()">Back to portfolio</a>
